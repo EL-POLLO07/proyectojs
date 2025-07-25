@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
+import { test } from "./bakend/controlers/alumnos.controles.js";
 
 dotenv.config();//acceder a la configuracion de dotenv 
 
@@ -22,5 +23,5 @@ app.listen(4000, ()=>{
     console.log("se escucha el servidor")
 })//verificas la funcionalidad del servidor 
 
-
+test();
 
